@@ -1,0 +1,9 @@
+def unique_Hash(L):
+  H = set()
+  for i in range(0,len(L)):
+    if L[i] in H:
+      return False
+    H.add(L[i])
+    #print('Valor de H', H)
+    #print('Valor de i', i)
+  return True

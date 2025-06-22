@@ -1,0 +1,8 @@
+def unique_Sort(L):
+  L.sort()
+  for i in range(1, len(L)):
+    #print('Valor de L', L)
+    #print('Valor de i', i)
+    if L[i-1] == L[i]:
+      return False
+  return True

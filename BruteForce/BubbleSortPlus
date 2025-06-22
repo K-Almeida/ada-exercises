@@ -1,0 +1,12 @@
+def bubbleSortPlus(A):
+  for i in range(len(A)-1, 0,-1):
+    n = False
+    for j in range(i):
+      if A[j] > A[j+1]:
+        H = A[j]
+        A[j] = A[j+1]
+        A[j + 1] = H
+        n = True
+    if not n:
+      break
+  return A
